@@ -1,7 +1,9 @@
 import { Module } from '@nestjs/common';
-import { HelloWorldModule } from './example/example.module';
+import { RealStateModule } from './real-state/realstate.module';
+import { BookmarkModule } from './bookmark/bookmark.module';
+
 
 @Module({
-  imports: [HelloWorldModule],
+  imports: [RealStateModule, BookmarkModule],
 })
 export class AppModule {}
