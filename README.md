@@ -44,18 +44,23 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
-## Run tests
+## Run tests via postman
 
-```bash
-# unit tests
-$ npm run test
+Example 1 – Tokyo (13), 2017, Residential (1)
 
-# e2e tests
-$ npm run test:e2e
+curl "http://localhost:3000/api/v1/townPlanning/estateTransaction/bar?prefCode=13&year=2017&type=1"
 
-# test coverage
-$ npm run test:cov
-```
+Example 2 – Tokyo (13), 2017, Commercial (2)
+curl "http://localhost:3000/api/v1/townPlanning/estateTransaction/bar?prefCode=13&year=2017&type=2"
+
+Example 3 – Kanagawa (14), 2018, Residential (1)
+curl "http://localhost:3000/api/v1/townPlanning/estateTransaction/bar?prefCode=14&year=2018&type=1"
+
+Hello world 
+curl http://localhost:3000/bookmark/hello
+
+Constant Data
+curl http://localhost:3000/bookmark/constant
 
 ## Deployment
 
